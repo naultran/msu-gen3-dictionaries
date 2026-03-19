@@ -40,6 +40,7 @@ links:
 properties: 
   type: 
     enum: ["subject"]
+    description: "The node type, which must be \"subject\" for all entries in this table. Used for schema validation."
   id:
     $ref: "_definitions.yaml#/UUID"
     systemAlias: node_id
@@ -47,36 +48,45 @@ properties:
     $ref: "_definitions.yaml#/to_one"
   submitter_id:
     type: string
+    description: "A unique identifier assigned by the data submitter to track the individual subject. Often matches internal animal ID or barcode."
   start_date:
     type: string
-    description: ""
+    description: "The date the subject entered the study, which may differ from experiment_start_date (e.g., for acclimation)."
   start_date_age:
     type: number
-    description: ""
+    description: "Age of the subject at the start of the study, in days. Used to normalize for developmental stage."
   experiment_start_date:
     type: string
-    description: ""
+    description: "The date when the subject was first exposed to experimental conditions (e.g., dosing start, diet change)."
   experiment_start_zt:
     type: number
-    description: ""
+    description: "The Zeitgeber time at which the experimental intervention began. Expressed as a number, usually from 0 to 24."
   sex:
     $ref: "_definitions.yaml#/sex"
+    description: "The biological sex of the subject."
+  reproductive_cycle_status:
+    $ref: "_definitions.yaml#/reproductive_cycle_status"
+    description: "The stage of the reproductive cycle at the time of sample collection or measurement"
+  embryonic_day:
+    type: number
+    description: "The pregnancy duration in embryonic days, if applicable"
   strain:
     $ref: "_definitions.yaml#/strain"
+    description: "The genetic strain of the organism."
   strain_source:
     type: string
-    description: ""
+    description: "The source or vendor from which the strain was obtained."
   euthanasia_date:
     type: string
-    description: ""
+    description: "The calendar date on which the subject was euthanized, typically recorded (YYYY-MM-DD)."
   euthanasia_zt:
     type: string
-    description: ""
+    description: "The Zeitgeber time (ZT) corresponding to the euthanasia event, relative to the circadian light/dark cycle (e.g., ZT0 = lights on)."
   euthanasia_method:
     $ref: "_definitions.yaml#/euthanasia_method"
   provenance: 
     type: string
-    description: "template version"
+    description: "The version or source of the data template used to collect the study metadata (autopopulated)."
   state:
     $ref: "_definitions.yaml#/state"
   project_id:

@@ -64,7 +64,11 @@ links:
 properties:
   $ref: "_definitions.yaml#/data_file_properties"
   type:
+<<<<<<< adding_repro_cycle_tile
     enum: [ "clinical_chemistry" ]
+=======
+    enum: [ "clinical_chemistrys" ]
+>>>>>>> main
   data_category:
     $ref: "_definitions.yaml#/data_category"
   data_type:

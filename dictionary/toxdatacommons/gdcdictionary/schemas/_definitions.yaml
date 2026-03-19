@@ -1512,3 +1512,15 @@ spike_ins:
     - Not collected
     - Not provided
     - Restricted access
+
+reproductive_cycle_status:
+  enum:
+    - Proestrus
+    - Estrus
+    - Metestrus
+    - Diestrus
+    - Gestation
+    - Lactation
+    - Estropause
+    - Missing
+    - Not applicable

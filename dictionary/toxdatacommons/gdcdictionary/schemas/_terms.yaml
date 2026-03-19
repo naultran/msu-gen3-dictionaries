@@ -1409,6 +1409,10 @@ relative_with_cancer_history:
     cde_version: 1.0
     term_url: "https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3901752&version=1.0"
 
+reproductive_cycle_status: # TOREVIEW
+  description: >
+    Text term to represent the reproductive cycle status of an individual.
+
 residual_disease:
   description: >
     Text terms to describe the status of a tissue margin following surgical resection.

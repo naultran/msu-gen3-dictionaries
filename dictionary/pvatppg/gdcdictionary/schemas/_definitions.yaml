@@ -333,83 +333,83 @@ data_category:
   term:
     $ref: "_terms.yaml#/data_category"
   enum:
+    - biological imaging
+    - cardiovascular measurement
+    - clinical chemistry
     - DESeq2
-    - WGS
-    - WXS
-    - Low Pass WGS
-    - Validation
-    - RNA-seq
-    - miRNA-seq
-    - Total RNA-Seq
     - DNA Panel
+    - flow cytometry
+    - Low Pass WGS
+    - miRNA-seq
+    - proteomics
+    - RNA-seq
     - snRNAseq
     - Spatial Trancriptomics
-    - biological imaging
-    - flow cytometry
     - targeted metabolomics
+    - Total RNA-Seq
     - untargeted metabolomic
-    - proteomics
-    - clinical chemistry
-    - cardiovascular measurement
-    - Not applicable
+    - Validation
+    - weight measurement
+    - WGS
+    - WXS
     - Missing
+    - Not applicable
     - Not collected
     - Not provided
     - Restricted access
-    - weight measurement
 data_type:
   term:
     $ref: "_terms.yaml#/data_type"
   enum:
-    - workspace
+    - Aligned Read QC
+    - Aligned Reads
+    - Alignment Coordinates
+    - Blood pressure
+    - Body Weights
+    - chromatograms
+    - Differential expression
     - export 
     - FCS mixed
     - FCS unmixed
-    - Differential expression
-    - Aligned Reads
-    - Alignment Coordinates
-    - Unaligned Reads
-    - Aligned Read QC
-    - Unaligned Read QC
-    - flow cytometry
-    - integrated peaks
-    - chromatograms
-    - whole slide scan
     - field of view image
+    - flow cytometry
+    - Food Weights
     - Hematology
-    - Blood pressure
-    - Not applicable
+    - integrated peaks
+    - Sample Weights
+    - Unaligned Read QC
+    - Unaligned Reads
+    - whole slide scan
+    - workspace
     - Missing
+    - Not applicable
     - Not collected
     - Not provided
     - Restricted access
-    - Body Weights
-    - Sample Weights
-    - Food Weights
 data_format:
   term:
     $ref: "_terms.yaml#/data_format"
   enum: 
-    - .wsp
-    - .xlsx
-    - .Rdata
-    - .h5ad
     - .bam
     - .bed
-    - .fq
+    - .csv
     - .fastq
     - .fcs
-    - .txt
-    - .csv
-    - .raw
-    - .mzML
-    - .zip
+    - .fq
     - .gzip
+    - .h5ad
+    - .mzML
     - .png
+    - .raw
+    - .Rdata
     - .tif
     - .tiff
-    - Not applicable
+    - .txt
+    - .wsp
+    - .xlsx
+    - .zip
     - Missing
+    - Not applicable
     - Not collected
     - Not provided
     - Restricted access
@@ -1566,3 +1566,15 @@ immobilization_method:
     - Isoflurane
     - Physical restraint
     - None 
+
+reproductive_cycle_status:
+  enum:
+    - Proestrus
+    - Estrus
+    - Metestrus
+    - Diestrus
+    - Gestation
+    - Lactation
+    - Estropause
+    - Missing
+    - Not applicable

@@ -64,6 +64,12 @@ properties:
   sex:
     $ref: "_definitions.yaml#/sex"
     description: "The biological sex of the subject."
+  reproductive_cycle_status:
+    $ref: "_definitions.yaml#/reproductive_cycle_status"
+    description: "The stage of the reproductive cycle at the time of sample collection or measurement"
+  embryonic_day:
+    type: number
+    description: "The pregnancy duration in embryonic days, if applicable"
   strain:
     $ref: "_definitions.yaml#/strain"
     description: "The genetic strain of the organism."
