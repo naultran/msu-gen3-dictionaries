@@ -1576,5 +1576,6 @@ reproductive_cycle_status:
     - Gestation
     - Lactation
     - Estropause
+    - Nonpregnant
     - Missing
     - Not applicable
