@@ -53,12 +53,12 @@ properties:
   id:
     $ref: "_definitions.yaml#/UUID"
     systemAlias: node_id
-  submitter_id:
-    type: string
   subjects:
     $ref: "_definitions.yaml#/to_one"
   cell_subjects:
     $ref: "_definitions.yaml#/to_one"
+  submitter_id:
+    type: string
   date:
     type: string
   biospecimen_anatomic_site:

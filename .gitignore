@@ -19,3 +19,5 @@ data/**/*.txt
 output/**/*.tsv
 
 .env
+credentials.json
+
