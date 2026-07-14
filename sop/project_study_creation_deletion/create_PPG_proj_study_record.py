@@ -33,7 +33,7 @@ def create_project(submission, program_name, project_code, description, contact_
         "type": "project",
         "contact_name": "{contact_name}",
         "institution": "{institution}",
-        "project_description": "{description}",
+        "description": "{description}",
         "email_address": "{email}",
         "telephone_number": ""
     }}
@@ -100,7 +100,7 @@ def main():
     parser.add_argument("--project_code", required=True,
                         help="Project code (e.g., TDC0002)")
 
-    parser.add_argument("--project_description", required=True,
+    parser.add_argument("--description", required=True,
                         help="Project description")
 
     parser.add_argument("--contact_name", required=True,
@@ -158,7 +158,7 @@ def main():
         sub,
         args.program,
         args.project_code,
-        args.project_description,
+        args.description,
         args.contact_name,
         args.institution,
         args.email,
