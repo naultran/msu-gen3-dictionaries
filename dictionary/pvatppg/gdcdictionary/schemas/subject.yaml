@@ -80,10 +80,16 @@ properties:
     type: string
     description: "The calendar date on which the subject was euthanized, typically recorded (YYYY-MM-DD)."
   euthanasia_zt:
-    type: string
+    type: number
     description: "The Zeitgeber time (ZT) corresponding to the euthanasia event, relative to the circadian light/dark cycle (e.g., ZT0 = lights on)."
   euthanasia_method:
     $ref: "_definitions.yaml#/euthanasia_method"
+  age:
+    type: number
+    description: "The age of the subject at the time of sample collection or measurement, in weeks."
+  age_units:
+    $ref: "_definitions.yaml#/age_units"
+    description: "The units for the age of the subject at the time of sample collection or measurement."
   provenance: 
     type: string
     description: "The version or source of the data template used to collect the study metadata (autopopulated)."

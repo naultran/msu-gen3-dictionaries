@@ -1330,10 +1330,25 @@ strain:
     - Dahl SS
   description: ""
 
+age_units:
+  enum:
+    - hours
+    - days
+    - weeks
+    - months
+    - years
+    - Not applicable
+    - Missing
+    - Not collected
+    - Not provided
+    - Restricted access
+  description: ""
+
 euthanasia_method:
   enum: 
     - Carbon dioxide asphyxiation
     - Cervical dislocation
+    - Pentobarbital
     - Not applicable
     - Missing
     - Not collected

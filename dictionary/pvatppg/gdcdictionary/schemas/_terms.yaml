@@ -29,6 +29,14 @@ adapter_sequence: # TOREVIEW
   description: >
     Base sequence of the sequencing adapter.
 
+age: # TOREVIEW
+  description: >
+    The age of the subject at the time of sample collection or measurement.
+
+age_units: # TOREVIEW
+  description: >
+    The units in which the age of the subject is expressed, typically in weeks.
+
 age_at_diagnosis:
   description: >
     Age at the time of diagnosis expressed in number of days since birth.
