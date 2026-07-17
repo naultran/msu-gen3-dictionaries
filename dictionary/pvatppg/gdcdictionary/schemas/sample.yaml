@@ -15,9 +15,9 @@ validators: null
 systemProperties: 
   - id
   - project_id
-  - state
   - created_datetime
   - updated_datetime
+  - state
 
 required:
   - type
@@ -61,13 +61,13 @@ properties:
     type: string
   date:
     type: string
+    description: "date of sample collection"
   biospecimen_anatomic_site:
     $ref: "_definitions.yaml#/biospecimen_anatomic_site"
   method_of_sample_procurement:
     $ref: "_definitions.yaml#/method_of_sample_procurement"
-
   preservation_method:
-    type: string
+    $ref: "_definitions.yaml#/extract_preservation_method"
   weight:
     type: number
   volume:
