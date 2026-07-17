@@ -18,13 +18,12 @@ This guide walks through the process of updating a Gen3 Data Dictionary locally 
 
 ### Installing Make on Windows
 
-Make is pre-installed on Linux and macOS. On Windows, you can install it via Chocolatey:
+Make is pre-installed on Linux and macOS. On Windows, you will need to install it manually:
 
-1. Install [Chocolatey](https://chocolatey.org/install) (requires administrator access)
-2. Run the following in PowerShell as Administrator:
+1. Run the following in PowerShell as Administrator:
 
 ```powershell
-choco install make
+winget install ezwinports.make
 ```
 
 ## Step-by-Step Workflow
