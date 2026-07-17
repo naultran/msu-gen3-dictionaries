@@ -70,6 +70,9 @@ properties:
   gestational_age:
     type: number
     description: "The pregnancy duration measured in days, if applicable"
+  organism:
+    $ref: "_definitions.yaml#/organism"
+    description: "The species of the subject."
   strain:
     $ref: "_definitions.yaml#/strain"
     description: "The genetic strain of the organism."
@@ -84,6 +87,7 @@ properties:
     description: "The Zeitgeber time (ZT) corresponding to the euthanasia event, relative to the circadian light/dark cycle (e.g., ZT0 = lights on)."
   euthanasia_method:
     $ref: "_definitions.yaml#/euthanasia_method"
+    description: "The method used to euthanize the subject."
   age:
     type: number
     description: "The age of the subject at the time of sample collection or measurement, in weeks."
