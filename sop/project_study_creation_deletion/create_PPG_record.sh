@@ -4,19 +4,18 @@ python create_PPG_proj_study_record.py \
   --cred credentials.json \
   --api https://dev.pvatppgmsu.com \
   --program LTTEST \
-  --project_code LTTEST_0001 \
-  --description "Test Project" \
+  --project_code PPG_0001 \
+  --description "Cohort 01 - 24 week Dahl S and SD males" \
   --availability Restricted \
-  --projects "LTTEST_0001" \
+  --projects "PPG_0001" \
   --contact_name "Leah Terrian" \
   --institution "MSU" \
   --email "terrianl@msu.edu" \
   --provenance "Not provided" \
   --organism "Rattus norvegicus" \
-  --study_description "Test Project" \
-  --experiment "Not provided" \
+  --experiment "in vivo" \
   --study_type "Not provided" \
-  --study_description "Nuclei Isolation of WAT" \
-  --study_design "Not provided" \
-  --study_title "Nuclei Isolation of WAT" \
-  --submitter_id "Nuclei_Isolation"
+  --study_description "Cohort 01 - 24 week Dahl S and SD males - Main" \
+  --study_design "Not applicable" \
+  --study_title "Main" \
+  --submitter_id "PPG_0001_Main"

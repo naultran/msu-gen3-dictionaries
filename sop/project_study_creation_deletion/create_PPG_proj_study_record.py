@@ -43,6 +43,30 @@ def create_project(submission, program_name, project_code, description, contact_
     data = submission.create_project(program=program_name, json=proj_json)
     print(f"[SUCCESS] Project created:\n{data}")
 
+    """
+    Automatically create a core_metadata_collection record.
+
+    Defaults:
+      title := project_code   (if not provided)
+      submitter_id := project_code  (if not provided)
+    """
+    cmc_txt = f"""
+    {{
+        "creator": "{contact_name}",
+        "description": "{description}",
+        "submitter_id": "{project_code}",
+        "title": "{project_code}",
+        "project_id": "{program_name}-{project_code}",
+        "type": "core_metadata_collection",
+        "projects": [{{"code": "{project_code}"}}]
+    }}
+    """
+    cmc_json = json.loads(cmc_txt)
+    print(f"[INFO] Creating CMC for {program_name}-{project_code}")
+    data = submission.submit_record(program=program_name, project=project_code, json=cmc_json)
+    print(f"[SUCCESS] CMC created:\n{data}")
+
+
 def create_study(
     submission,
     program_name,
@@ -74,8 +98,6 @@ def create_study(
     study_json = json.loads(study_txt)
 
     print(f"[INFO] Creating study {submitter_id} under project {project_code}")
-
-    #data = sub.submit_record(program=prog,project=proj,json=cmc_json)
 
     data = submission.submit_record(
         program=program_name,
