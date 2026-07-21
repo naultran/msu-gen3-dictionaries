@@ -88,12 +88,6 @@ properties:
   euthanasia_method:
     $ref: "_definitions.yaml#/euthanasia_method"
     description: "The method used to euthanize the subject."
-  age:
-    type: number
-    description: "The age of the subject at the time of sample collection or measurement, in weeks."
-  age_units:
-    $ref: "_definitions.yaml#/age_units"
-    description: "The units for the age of the subject at the time of sample collection or measurement."
   provenance: 
     type: string
     description: "The version or source of the data template used to collect the study metadata (autopopulated)."
