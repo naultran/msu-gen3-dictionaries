@@ -46,12 +46,13 @@ def main():
     auth = Gen3Auth(args.api, refresh_file=args.cred)
     sub = Gen3Submission(args.api, auth)
 
-    # Project deletion
-    delete_project(sub, args.program, args.project)
-
     if args.uuid:
         # Record deletion
         delete_record(sub, args.program, args.project, args.uuid)
+
+    else:
+        # Project deletion
+        delete_project(sub, args.program, args.project)
 
 if __name__ == "__main__":
     main()
