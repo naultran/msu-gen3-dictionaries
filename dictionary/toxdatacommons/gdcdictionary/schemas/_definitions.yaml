@@ -1225,12 +1225,14 @@ scoring_system:
 
 study_design:
   enum:
-    - dose response design
-    - case control design
-    - cross sectional design
-    - genetic modification design
-    - sex design
-    - time series design
+    - Dose Response Design
+    - Case Control Design
+    - Cross Sectional Design
+    - Genetic Modification Design
+    - Sex Design
+    - Time Series Design
+    - Repeated-Dose Toxicity Design
+    - Toxicokinetic Design
     - Not applicable
     - Missing
     - Not collected
@@ -1242,14 +1244,10 @@ study_design:
 
 study_type: 
   enum:
-    - Not applicable
-    - Missing
-    - Not collected
-    - Not provided
-    - Restricted access
     - Teratology
     - Short term
     - Long term
+    - Acute - Single Dose
     - Bacterial mutagenicity
     - Drosophila germ cell mutagenicity
     - In vitro micronucleus
@@ -1266,33 +1264,41 @@ study_type:
     - Toxicogenomics
     - Toxicokinetics
     - Zebrafish
+    - Not applicable
+    - Missing
+    - Not collected
+    - Not provided
+    - Restricted access
   description: "A categorical value specification that specifies the type of study
     from a list of study types"
 
 experimental_setting:
   enum:
+    - in vivo
+    - ex vivo
+    - in vitro
+    - in situ
+    - in silico
     - Not applicable
     - Missing
     - Not collected
     - Not provided
     - Restricted access
-    - in vivo
-    - ex vivo
   description: ""
 
 organism:
   enum:
-    - Not applicable
-    - Missing
-    - Not collected
-    - Not provided
-    - Restricted access
     - Homo sapiens
     - Mus musculus
     - Rattus norvegicus
     - Drosophila melanogaster
     - Danio rerio
     - Xenopus laevis
+    - Not applicable
+    - Missing
+    - Not collected
+    - Not provided
+    - Restricted access
   description: ""
 
 
@@ -1309,21 +1315,22 @@ sex:
 
 strain:
   enum: 
-    - Not applicable
-    - Missing
-    - Not collected
-    - Not provided
-    - Restricted access
     - C57BL/6NCrl
     - C57BL/6J
     - C57BL/6NCrl_PkmΔDRE
     - C57BL/6NCrl_WT
+    - CD-1
     - 129/Sv
     - FVB/N
     - BALB/cJ
     - C3H/HeJ
     - Sprague-Dawley
     - Dahl SS
+    - Not applicable
+    - Missing
+    - Not collected
+    - Not provided
+    - Restricted access
   description: ""
 
 euthanasia_method:
@@ -1390,6 +1397,7 @@ route:
     - Intrathalamic Route of Administration
     - Intraurethral Route of Administration
     - Intravaginal Route of Administration
+    - Intravenous Route of Administration
     - Iontophoresis Route of Administration
     - Laryngeal Route of Administration
     - Laryngotracheal Route of Administration
