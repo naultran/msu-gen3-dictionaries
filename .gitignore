@@ -20,6 +20,9 @@ output/**/*.tsv
 
 .env
 credentials.json
+credentials_tox.json
 testing.ipynb
 create_PPG_record_active.sh
 delete_PPG_record_active.sh
+create_ToxDC_record_active.sh
+delete_ToxDC_record_active.sh
