@@ -1410,6 +1410,34 @@ route:
     - Oral Route of Administration
     - Other Route of Administration
     - Parenteral Route of Administration
+    - Peribulbar Route of Administration
+    - Perilesional Route of Administration
+    - Perivenous Route of Administration
+    - Pharyngeal Route of Administration
+    - Procedure Route of Administration
+    - Rectal Route of Administration
+    - Respiratory Tract Route of Administration
+    - Retrobulbar Route of Administration
+    - Subconjunctival Route of Administration
+    - Subdural Route of Administration
+    - Sublesional Route of Administration
+    - Suborbital Route of Administration
+    - Substance Use Route of Administration
+    - Suprachoroidal Route of Administration
+    - Systemic Route of Administration
+    - Topical Route of Administration
+    - Transdermal Route of Administration
+    - Transforaminal Route of Administration
+    - Transmammary Route of Administration
+    - Transplacental Route of Administration
+    - Transtracheal Route of Administration
+    - Transtympanic Route of Administration
+    - Transurethral Route of Administration
+    - Unassigned Route of Administration
+    - Unknown Route of Administration
+    - Ureteral Route of Administration
+    - Vaginal Route of Administration
+    - Veterinary Route of Administration
     - Not applicable
     - Missing
     - Not collected

@@ -52,9 +52,15 @@ properties:
   start_date:
     type: string
     description: "The date the subject entered the study, which may differ from experiment_start_date (e.g., for acclimation)."
-  start_date_age:
-    type: number
-    description: "Age of the subject at the start of the study, in days. Used to normalize for developmental stage."
+  birth_date:
+    type: string
+    description: "Date of birth of the subject."
+  dam_animal_id:
+    type: string
+    description: "Animal ID of the dam (mother)."
+  sire_animal_id:
+    type: string
+    description: "Animal ID of the sire (father)."
   experiment_start_date:
     type: string
     description: "The date when the subject was first exposed to experimental conditions (e.g., dosing start, diet change)."
@@ -70,6 +76,9 @@ properties:
   gestational_age:
     type: number
     description: "The pregnancy duration measured in days, if applicable"
+  organism:
+    $ref: "_definitions.yaml#/organism"
+    description: "The species of the subject."
   strain:
     $ref: "_definitions.yaml#/strain"
     description: "The genetic strain of the organism."
@@ -84,6 +93,10 @@ properties:
     description: "The Zeitgeber time (ZT) corresponding to the euthanasia event, relative to the circadian light/dark cycle (e.g., ZT0 = lights on)."
   euthanasia_method:
     $ref: "_definitions.yaml#/euthanasia_method"
+    description: "The method used to euthanize the subject."
+  subgroup:
+    type: string
+    description: "A label or identifier for a subgroup within the study (e.g., litter_A, treatment_B, etc.)."
   provenance: 
     type: string
     description: "The version or source of the data template used to collect the study metadata (autopopulated)."
@@ -95,6 +108,4 @@ properties:
     $ref: "_definitions.yaml#/datetime"
   updated_datetime:
     $ref: "_definitions.yaml#/datetime"
-  project_id:
-    $ref: "_definitions.yaml#/project_id"
 
