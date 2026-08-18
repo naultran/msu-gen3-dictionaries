@@ -2,6 +2,8 @@
 .idea/
 *.iml
 
+.gitignore
+
 .env/
 env/
 .venv/
@@ -21,6 +23,7 @@ output/**/*.tsv
 .env
 credentials.json
 credentials_tox.json
+credentials_ppg.json
 testing.ipynb
 create_PPG_record_active.sh
 delete_PPG_record_active.sh
