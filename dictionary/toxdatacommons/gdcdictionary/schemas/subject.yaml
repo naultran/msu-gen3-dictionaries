@@ -94,9 +94,9 @@ properties:
   euthanasia_method:
     $ref: "_definitions.yaml#/euthanasia_method"
     description: "The method used to euthanize the subject."
-  subgroup:
+  unit_of_analysis:
     type: string
-    description: "A label or identifier for a subgroup within the study (e.g., litter_A, treatment_B, etc.)."
+    description: "In a statistical model, the unit of analysis is the entity about which inference is being made (e.g., individual, group, litter). Default is assumed to be 'individual'."
   provenance: 
     type: string
     description: "The version or source of the data template used to collect the study metadata (autopopulated)."
